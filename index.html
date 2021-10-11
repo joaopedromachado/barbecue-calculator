@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/bbq.png" rel="icon">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Barbecue Calculator</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            background: url(./assets/background.jpg) no-repeat center fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+        li{
+            font-size: 3vh;
+            color: aliceblue;
+            }
+        .carne{
+            list-style-image: url(./assets/beef.png);
+        }
+        .cerveja{
+            list-style-image: url(./assets/beer.png);
+        }
+        .cola{
+            list-style-image: url(./assets/cola.png);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header class="text-content">
+            <h1 class="text">Saiba a quantidade ideal para seu churrasco!!!</h1>
+        </header>
+
+        <section class="input-content">
+            <h1 class="title">Churrascômetro</h1>
+            <input type="number" name="adultos" placeholder="Adultos" id="adultos">
+            <input type="number" name="criancas" placeholder="Crianças" id="criancas">
+            <input type="number" name="horas" placeholder="Duração (h)" id="horas">
+            <button onclick="calcularBbq()">Calcular</button>
+
+            <div id="resultado">
+                
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

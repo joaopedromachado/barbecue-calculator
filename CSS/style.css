@@ -1,0 +1,61 @@
+.text-content{
+    position: fixed;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    left: 40px;
+}
+.text{
+    font-size: 10vh;
+}
+.input-content{
+    position: relative;
+    background-color: #064c88;
+    padding: 20px;
+    width: 400px;
+    height: 95vh;
+    float: right;
+    border-radius: 20px 0 0 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 40px;
+}
+input{
+    font-size: 1rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: hidden;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px;
+    outline: none;
+}
+button{
+    background-color: #175c97;
+    color: aliceblue;
+    font-size: 1.3rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+}
+button:hover{
+    background-color: #0c4577;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .text-content{
+        display: none;
+    }
+    .input-content{
+        margin: auto;
+        float: none;
+        border-radius: 10px;
+    }
+}
